@@ -1,7 +1,9 @@
 import { Footer } from "@/components/Footer";
+import { Album } from "@/components/Album";
 import { Sidebar } from "@/components/Sidebar";
 import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 import Image from "next/image";
+import { Playlist } from "@/components/Playlist";
 
 export default function Home() {
   return (
@@ -21,218 +23,94 @@ export default function Home() {
           <h1 className="font-semibold text-3xl mt-10"> Good Afternoon</h1>
 
           <div className="grid grid-cols-3 gap-4 mt-4">
-            <a
-              href="#"
-              className="bg-white/5 group rounded-md flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors"
-            >
-              <Image
-                src="/album1.jpg"
-                width={104}
-                height={104}
-                alt="Capa do álbum Wasting Light da banda Foo Fighters"
-              />
-              <strong>Wasting Light</strong>
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play fill="bg-black" />
-              </button>
-            </a>
+            <Album
+              src="/album1.jpg"
+              alt="Capa do álbum Wasting Light da banda Foo Fighters"
+              albumName="Wasting Light"
+            />
 
-            <a
-              href="#"
-              className="bg-white/5 group rounded-md flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors"
-            >
-              <Image
-                src="/album2.jpg"
-                width={104}
-                height={104}
-                alt="Capa do álbum 1989 da cantora americana Taylor Swift"
-              />
-              <strong>1989</strong>
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play fill="bg-black" />
-              </button>
-            </a>
+            <Album
+              src="/album2.jpg"
+              alt="Capa do álbum 1989 da cantora americana Taylor Swift"
+              albumName="1989"
+            />
 
-            <a
-              href="#"
-              className="bg-white/5 group rounded-md flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors"
-            >
-              <Image
-                src="/album3.jpg"
-                width={104}
-                height={104}
-                alt="Capa do álbum de estúdio intitulado X, do cantor e compositor inglês Ed Sheeran."
-              />
-              <strong>X</strong>
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play fill="bg-black" />
-              </button>
-            </a>
+            <Album
+              src="/album3.jpg"
+              alt="Capa do álbum de estúdio intitulado X, do cantor e compositor inglês Ed Sheeran."
+              albumName="X"
+            />
 
-            <a
-              href="#"
-              className="bg-white/5 group rounded-md flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors"
-            >
-              <Image
-                src="/album4.jpg"
-                width={104}
-                height={104}
-                alt="Capa do álbum Purpose do cantor Justin Bieber"
-              />
-              <strong>Purpose</strong>
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play fill="bg-black" />
-              </button>
-            </a>
+            <Album
+              src="/album4.jpg"
+              alt="Capa do álbum Purpose do cantor Justin Bieber"
+              albumName="Purpose"
+            />
 
-            <a
-              href="#"
-              className="bg-white/5 group rounded-md flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors"
-            >
-              <Image
-                src="/album5.jpg"
-                width={104}
-                height={104}
-                alt="Capa do álbum A Head Full of Dreams da banda Coldplay."
-              />
-              <strong>A Head Full of Dreams</strong>
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play fill="bg-black" />
-              </button>
-            </a>
+            <Album
+              src="/album5.jpg"
+              alt="Capa do álbum A Head Full of Dreams da banda Coldplay."
+              albumName="A Head Full of Dreams"
+            />
 
-            <a
-              href="#"
-              className="bg-white/5 group rounded-md flex items-center gap-4 overflow-hidden hover:bg-white/10 transition-colors"
-            >
-              <Image
-                src="/album6.jpg"
-                width={104}
-                height={104}
-                alt="Capa do álbum Ten da banda Pearl Jam"
-              />
-              <strong>Ten</strong>
-              <button className="w-12 h-12 flex items-center justify-center pl-1 rounded-full bg-green-400 text-black ml-auto mr-8 invisible group-hover:visible">
-                <Play fill="bg-black" />
-              </button>
-            </a>
+            <Album
+              src="/album6.jpg"
+              alt="Capa do álbum Ten da banda Pearl Jam"
+              albumName="Ten"
+            />
           </div>
 
           <h2 className="font-semibold text-2xl mt-10"> Made for you</h2>
 
           <div className="grid grid-cols-7 gap-4 mt-4">
-            <a
-              href=""
-              className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10"
-            >
-              <Image
-                src="/album1.jpg"
-                className="w-full"
-                width={120}
-                height={120}
-                alt="Capa do álbum Wasting Light da banda Foo Fighters"
-              />
-              <strong className="font-semibold">Daily Mix 1</strong>
-              <span className="text-sm text-zinc-400">
-                Wallows, COIN, girl in red and more
-              </span>
-            </a>
-            <a
-              href=""
-              className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10"
-            >
-              <Image
-                src="/album2.jpg"
-                className="w-full"
-                width={120}
-                height={120}
-                alt="Capa do álbum 1989 da cantora americana Taylor Swift"
-              />
-              <strong className="font-semibold">Daily Mix 2</strong>
-              <span className="text-sm text-zinc-400">
-                Taylor Swift, Olivia Rodrigo, Selena Gomez and more
-              </span>
-            </a>
-            <a
-              href=""
-              className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10"
-            >
-              <Image
-                src="/album3.jpg"
-                className="w-full"
-                width={120}
-                height={120}
-                alt="Capa do álbum de estúdio intitulado X, do cantor e compositor inglês Ed Sheeran."
-              />
-              <strong className="font-semibold">Daily Mix 3</strong>
-              <span className="text-sm text-zinc-400">
-                Ed Sheeran, Bruno Mars, Sam Smith and more
-              </span>
-            </a>
-            <a
-              href=""
-              className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10"
-            >
-              <Image
-                src="/album4.jpg"
-                className="w-full"
-                width={120}
-                height={120}
-                alt="Capa do álbum Purpose do cantor Justin Bieber"
-              />
-              <strong className="font-semibold">Daily Mix 4</strong>
-              <span className="text-sm text-zinc-400">
-                Justin Bieber, ZAYN, Shawn Mendes and more
-              </span>
-            </a>
-            <a
-              href=""
-              className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10"
-            >
-              <Image
-                src="/album5.jpg"
-                className="w-full"
-                width={120}
-                height={120}
-                alt="Capa do álbum A Head Full of Dreams da banda Coldplay."
-              />
-              <strong className="font-semibold">Daily Mix 5</strong>
-              <span className="text-sm text-zinc-400">
-                Coldplay, OneRepublic, Oasis and more
-              </span>
-            </a>
-            <a
-              href=""
-              className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10"
-            >
-              <Image
-                src="/album6.jpg"
-                className="w-full"
-                width={120}
-                height={120}
-                alt="Capa do álbum Ten da banda Pearl Jam"
-              />
-              <strong className="font-semibold">Daily Mix 6</strong>
-              <span className="text-sm text-zinc-400">
-                Pearl Jam, Stone Temple Pilots, Soundgarden and more
-              </span>
-            </a>
-            <a
-              href=""
-              className="bg-white/5 p-3 rounded-md flex flex-col gap-2 hover:bg-white/10"
-            >
-              <Image
-                src="/album7.jpg"
-                className="w-full"
-                width={120}
-                height={120}
-                alt="Capa do álbum In A Perfect World da banda Kodaline"
-              />
-              <strong className="font-semibold">Daily Mix 7</strong>
-              <span className="text-sm text-zinc-400">
-                Kodaline, Seafret, Passenger and more
-              </span>
-            </a>
+            <Playlist
+              src="/album1.jpg"
+              alt="Capa do álbum Wasting Light da banda Foo Fighters"
+              playlistName="Daily Mix 1"
+              artist=" Wallows, COIN, girl in red and more"
+            />
+
+            <Playlist
+              src="/album2.jpg"
+              alt="Capa do álbum 1989 da cantora americana Taylor Swift"
+              playlistName="Daily Mix 2"
+              artist="Taylor Swift, Olivia Rodrigo, Selena Gomez and more"
+            />
+
+            <Playlist
+              src="/album3.jpg"
+              alt="Ed Sheeran, Bruno Mars, Sam Smith and more"
+              playlistName="Daily Mix 3"
+              artist="Capa do álbum de estúdio intitulado X, do cantor e compositor inglês Ed Sheeran."
+            />
+
+            <Playlist
+              src="/album4.jpg"
+              alt="Capa do álbum Purpose do cantor Justin Bieber"
+              playlistName="Daily Mix 4"
+              artist="Justin Bieber, ZAYN, Shawn Mendes and more"
+            />
+
+            <Playlist
+              src="/album5.jpg"
+              alt="Capa do álbum A Head Full of Dreams da banda Coldplay."
+              playlistName="Daily Mix 5"
+              artist="Coldplay, OneRepublic, Oasis and more"
+            />
+
+            <Playlist
+              src="/album6.jpg"
+              alt="Capa do álbum Ten da banda Pearl Jam"
+              playlistName="Daily Mix 6"
+              artist="Pearl Jam, Stone Temple Pilots, Soundgarden and more"
+            />
+
+            <Playlist
+              src="/album7.jpg"
+              alt="Capa do álbum In A Perfect World da banda Kodaline"
+              playlistName="Daily Mix 7"
+              artist="Kodaline, Seafret, Passenger and more"
+            />
           </div>
         </main>
       </div>
